@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Кайрат vs Реал Мадрид — Статистика (30.09.2025)</title>
+  <style>
+    :root { 
+      --overlay: rgba(0,0,0,0.55);   
+      --panel-bg: rgba(200,200,200,0.92); /* сұр панель */
+    }
+
+    html,body { height:100%; margin:0; }
+    body{
+      font-family: Arial, sans-serif;
+      background-image: url("https://pictures.ua.tribuna.com/image/b4eff527-4b7d-41fb-9f8d-1e20dcdef628?width=1920&quality=70");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #fff;
+    }
+
+    body::before{
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: var(--overlay);
+      z-index: 0;
+    }
+
+    .container{
+      position: relative;
+      z-index: 1;
+      max-width: 1000px;
+      margin: 28px auto;
+      padding: 20px;
+    }
+
+    header { text-align: center; margin-bottom: 12px; }
+    h1 { margin: 0; font-size: 1.6rem; text-shadow:0 2px 6px rgba(0,0,0,0.6); }
+    .meta { color: #e6e6e6; margin-top:6px; font-size:0.95rem; }
+
+    .score {
+      font-size:2rem;
+      font-weight:700;
+      margin-top:8px;
+      text-shadow: 0 3px 8px rgba(0,0,0,0.6);
+    }
+
+    main { display:flex; gap:16px; flex-wrap:wrap; justify-content:center; }
+
+    .panel{
+      background: var(--panel-bg);
+      color: #111;
+      width:320px;
+      border-radius:10px;
+      padding:14px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+    }
+    .panel h2{ margin:0 0 8px 0; font-size:1.05rem; }
+    .player{ display:flex; justify-content:space-between; margin:6px 0; font-size:0.96rem; }
+    ul.goals{ padding-left:18px; margin:6px 0; color:#222; }
+
+    footer{ text-align:center; color:#eee; margin-top:22px; font-size:0.9rem; }
+
+    @media (max-width:720px){
+      .panel{ width:90%; }
+      h1{ font-size:1.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div style="display:flex; align-items:center; justify-content:center; gap:20px;">
+        <!-- Клуб логотиптері -->
+        <img src="https://upload.wikimedia.org/wikipedia/kk/2/2e/FC_Kairat_logo.png" 
+             alt="Кайрат" style="height:60px;">
+        <h1>Кайрат vs Реал Мадрид</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg" 
+             alt="Реал Мадрид" style="height:60px;">
+      </div>
+      <div class="meta">Дата: 30 қыркүйек 2025 — Central Stadium, Алматы</div>
+      <div class="score">Нәтиже: <span style="color:crimson">0</span> : <span style="color:darkgreen">5</span></div>
+    </header>
+
+    <main>
+      <div class="panel">
+        <h2>Голдар</h2>
+        <ul class="goals">
+          <li>25' — Килиан Мбаппе (пенальти)</li>
+          <li>52' — Килиан Мбаппе</li>
+          <li>73' — Килиан Мбаппе</li>
+          <li>83' — Эдуардо Камавинга</li>
+          <li>90+3' — Браим Диас</li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h2>Үздік ойыншылар мен рейтингтер</h2>
+        <div class="player"><span>K. Mbappe</span><span>9.7</span></div>
+        <div class="player"><span>Dean Huijsen</span><span>8.7</span></div>
+        <div class="player"><span>Arda Guler</span><span>8.3</span></div>
+      </div>
+
+      <div class="panel">
+        <h2>Жеке көрсеткіштер</h2>
+        <div class="player"><span>К. Мбаппе</span><span>3 гол</span></div>
+        <div class="player"><span>Э. Камавинга</span><span>1 гол</span></div>
+        <div class="player"><span>Б. Диас</span><span>1 гол</span></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
+
+<section id="contact" class="panel" style="margin-top:20px;">
+  <h2>Байланыс</h2>
+  <p>Бізбен байланысу үшін төмендегі нысанды толтырыңыз:</p>
+  <form>
+    <label for="name">Атыңыз:</label><br>
+    <input type="text" id="name" name="name" required style="width:100%;padding:8px;border-radius:6px;border:1px solid #ccc;"><br><br>
+
+    <label for="email">Электронды пошта:</label><br>
+    <input type="email" id="email" name="email" required style="width:100%;padding:8px;border-radius:6px;border:1px solid #ccc;"><br><br>
+
+    <label for="message">Хабарлама:</label><br>
+    <textarea id="message" name="message" rows="4" style="width:100%;padding:8px;border-radius:6px;border:1px solid #ccc;"></textarea><br><br>
+
+    <button type="submit" style="background-color:#007bff;color:white;padding:10px 20px;border:none;border-radius:6px;cursor:pointer;">Жіберу</button>
+  </form>
+</section>
